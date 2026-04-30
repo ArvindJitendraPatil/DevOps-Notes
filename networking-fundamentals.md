@@ -29,7 +29,7 @@ TCP/IP is practically used for providing communication between computers over th
 
 ### Real Example
 
-![snapshot](images/curl.png)
+
 
 → HTTP (Application) over TCP (Transport) over IP (Internet)
 
@@ -39,55 +39,55 @@ TCP/IP is practically used for providing communication between computers over th
 
  **Observation:** Local private IP address is 10.84.212.222
  
-![snapshot](images/ip.png)
+
 
 * Reachability: `ping <target>`
 
  **Observation:** 0% packet loss with 4006ms average latency confirms good network connectivity.
  
-![snapshot](images/ping.png)
+
 
 * Path: `traceroute <target>`
 
  **Observation:** 30 hops max with 80.629 ms latency.
   Longer latency at hop 2 compared to others.
   
-![snapshot](images/traceroute.png)
+
 
 * Ports: `ss -tulpn` or `netstat -tulpn`
 
  **Observation:** Service - ssh. SSH is listening on port 22.
  
-![snapshot](images/port.png)
+
 
 * Name resolution: `dig <domain>` or `nslookup <domain>`
 
  **Observation:** Domain resolves to 142.250.70.100.
  
-![snapshot](images/dig.png)
+
 
 * HTTP check: `curl -I <http/https-url>`
 
  **Observation:** Received response HTTP/1.1 200 OK. Server successfully responded and the resource is available.
  
-![snapshot](images/curl_I.png)
+
 
 * Connections snapshot: `netstat -an | head`
 
  **Observation:** LISTEN: 5 entries (ports 631, 7071, 53, 54, 22).
  ESTABLISHED: 3 entries (all HTTPS connections).
  
-![snapshot](images/netstat.png)
+
 
 ## Mini Task: Port Probe & Interpret
 
 - SSH service on port 22
 
-![snapshot](images/ss_ssh.png)
+
 
 - Connection succeeded
 
-![snapshot](images/nc.png)
+
 
 **If not reachable :** 
 - Check service status - `systemctl status ssh`
