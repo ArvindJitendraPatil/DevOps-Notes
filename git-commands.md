@@ -21,7 +21,7 @@
 | Command | Usage | Example |
 |-------|-----------|---------|
 | `git init` | initialize a repo inside directory | `git init` |
-| `git clone <url>` | clone an existing repo | `git clone https://github.com/Afroz-J-Shaikh/90DaysOfDevOps.git` |
+| `git clone <url>` | clone an existing repo | `git clone https://github.com/ArvindJitendraPatil/90DaysOfDevOps.git` |
 | `git add file` | add untrack files | `git add demo.txt` |
 | `git commit` | make a commit | `git commit -m "added demo.txt"` |
 | `git reset file` | unstrack a file | `git reset demo.txt` |
@@ -43,7 +43,7 @@
 | `gh auth login` | login to github from cli | `gh auth login` |
 | `gh auth status` | to check login status | `gh auth status` |
 | `gh repo create` | creating repository | `gh repo create my-repo --public --source=. --remote=origin --push` |
-| `gh repo clone username/repository` | cloning repository | `gh repo clone Afroz-J-Shaikh/90DaysOfDevOps ` |
+| `gh repo clone username/repository` | cloning repository | `gh repo clone ArvindJitendraPatil/90DaysOfDevOps ` |
 | `gh repo list` | list all reops  | `gh repo list` |
 | `gh repo delete <repo name>` | deletes a repository | `gh repo delete demo-repo` |
 | `gh issue create` | create an issue | `gh issue create --title "Bug in login" --body "Login fails on invalid token"` |
