@@ -99,7 +99,7 @@ fi
 
 
 Output :
-afroz@afroz:~/practice_sh$ ./try.sh 
+ArvindJitendraPatil:~/practice_sh$ ./try.sh 
 a=Hello	b=Hello
 Check = : True
 Check != : False
@@ -338,7 +338,7 @@ for(( i=$n; i<=20 ; i++ ));do
 done
 
 OutPut:
-afroz@afroz:~/practice_sh$ ./br_cnt.sh 
+ArvindJitendraPatil:~/practice_sh$ ./br_cnt.sh 
 Enter any num between 1-20 : 0
 Breaking loop: 0 not between 1-20
 afroz@afroz:~/practice_sh$ ./br_cnt.sh 
@@ -373,7 +373,7 @@ done
 
 ```
 add() {
-        local name="Afroz" #local variable
+        local name="Arvind" #local variable
         echo "I am local variable : $name"
         echo -e "Arguments $1 , $2 " # $1&$2 arguments passed to function
         echo -e "Addition : "$(( $1 + $2 )) 
